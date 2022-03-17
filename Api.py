@@ -74,7 +74,7 @@ def Predicted(symptomsgg):
     np.ravel(y_test)
 
     symptom = symptomsgg.split(",")
-
+    print(symptom)
     S1 = symptom[0]
     S2 = symptom[1]
     S3 = symptom[2]
