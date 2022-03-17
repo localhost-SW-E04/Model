@@ -112,7 +112,8 @@ def Predicted(symptomsgg):
             "Designation": "Dermatalogist", 
             "Qualification":"MBBS, MD",
             "Rating": 4.8,
-            "Consultation Fee": 800}
+            "Consultation Fee": 800,
+            "Tests": "Blood Test, Allergy Test, Prick Test"}
 
     elif a==2 or a==3 or a==5 or a==8 or a==19 or a==20 or a==21 or a==22 or a==23 or a==24:
         result = {
@@ -121,7 +122,8 @@ def Predicted(symptomsgg):
             "Designation": "Gastroenterologist",
             "Qualification": "MBBS, MD",
             "Rating": 4.6,
-            "Consultation Fee": 500}
+            "Consultation Fee": 500,
+            "Tests": "Endoscopy, Colonoscopy, Sigmoidoscopy"}
 
     elif a==12 or a==38:
         result = {
@@ -130,7 +132,8 @@ def Predicted(symptomsgg):
             "Designation": "Gynacologist", 
             "Qualification": "MBBS, MD", 
             "Rating": 5.0, 
-            "Consultation Fee": 1500}
+            "Consultation Fee": 1500,
+            "Tests": "Ultrasound, STD Test, Biopsy"}
 
     elif a==34 or a==35:
         result = {
@@ -139,7 +142,8 @@ def Predicted(symptomsgg):
             "Designation": "Orthologist", 
             "Qualification": "MBBS, MD", 
             "Rating": 4.2, 
-            "Consultation Fee": 500}
+            "Consultation Fee": 500,
+            "Tests": "Arthrography, X-Ray, CT Scan"}
         
     elif a==9 or a==27 or a==25:
         result = {
@@ -148,7 +152,8 @@ def Predicted(symptomsgg):
             "Designation": "Pulmonologist", 
             "Qualification": "MBBS, MD", 
             "Rating": 4.7, 
-            "Consultation Fee": 1800}
+            "Consultation Fee": 1800,
+            "Tests": "Spirometry, Plethysmography, CT scan"}
 
     elif a==7 or a==14 or a==15 or a==17 or a==18 or a==26:
         result = {
@@ -157,7 +162,8 @@ def Predicted(symptomsgg):
             "Designation": "Physician", 
             "Qualification": "MBBS, MD", 
             "Rating": 4.6, 
-            "Consultation Fee": 500}
+            "Consultation Fee": 500,
+            "Test": "Blood Test, Maleria Test Dengue Test"}
 
     elif a==29 or a==30:
         result = {
@@ -166,7 +172,8 @@ def Predicted(symptomsgg):
             "Designation": "Cardiologist", 
             "Qualification": "MBBS, MD", 
             "Rating": 5.0, 
-            "Consultation Fee": 2000}
+            "Consultation Fee": 2000,
+            "Test": "Endoscopy, ECG, Colour Doppler"}
         
     elif a==6 or a==31 or a==32:
         result = {
@@ -175,8 +182,8 @@ def Predicted(symptomsgg):
             "Designation": "Endocrinologist", 
             "Qualification": "MBBS, MD", 
             "Rating": 5.0, 
-            "Consultation Fee": 1500}
-
+            "Consultation Fee": 1500,
+            "Test": "Complete Blood Count, Thyroid, ACTH Level"}
     elif a==10 or a==11 or a==13 or a==28 or a==36:
         result = {
             "Deasease": t,
@@ -184,7 +191,8 @@ def Predicted(symptomsgg):
             "Designation": "Neurologist", 
             "Qualification": "MBBS, MD", 
             "Rating": 4.9, 
-            "Consultation Fee": 1500}
+            "Consultation Fee": 1500,
+            "Test": "MRI, CT Scan, PET"}
 
     return jsonify(result)
 
