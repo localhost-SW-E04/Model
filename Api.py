@@ -9,7 +9,7 @@ app = Flask(__name__)
 def main():
     return "api is calling"
 
-@app.route('/<string:symptomsgg>')
+@app.route('/symptoms=<string:symptomsgg>')
 def Predicted(symptomsgg):
     l1=['back_pain','constipation','abdominal_pain','diarrhoea','mild_fever','yellow_urine',
     'yellowing_of_eyes','acute_liver_failure','fluid_overload','swelling_of_stomach',
@@ -73,7 +73,7 @@ def Predicted(symptomsgg):
     y_test = tr[["prognosis"]]
     np.ravel(y_test)
 
-    symptom = symptomsgg.split(",")
+    symptom = symptomsgg.split("&")
     print(symptom)
     S1 = symptom[0]
     S2 = symptom[1]
